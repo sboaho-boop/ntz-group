@@ -36,7 +36,6 @@ const milestones = [
   { year: "2017", title: "Soil & climate studies", description: "Land and soil samples tested at the University of Lubumbashi, confirming fertile sandy-loam soils and a favourable tropical climate." },
   { year: "2020", title: "Survey & demarcation", description: "Cadastral surveys and demarcation of the concession blocks with the Mweka land registry, followed by the state award of the concession." },
   { year: "2021", title: "Milling & storage concept", description: "Plans developed for a maize-flour mill, grain drying and silo storage of up to 30,000 tonnes." },
-  { year: "2023", title: "Project documentation", description: "Detailed project descriptions, investor documents and cooperation models finalised with Government of the DRC alignment." },
   { year: "2025", title: "Launch of operations", description: "Business plan on an initial farming footprint of 1,310 hectares near Ndambo, starting up with commercial partners and local labour." },
 ];
 
@@ -101,11 +100,6 @@ export default async function TerrakiliPage() {
                   Terrakili was founded by Congolese entrepreneurs Serge Ngandu and Franck Nyimilongo Pieme, and works in close
                   cooperation with experienced South African commercial farmers. The company is committed to strengthening food
                   security in the DRC through professional, sustainable commercial farming that partners with local communities.
-                </p>
-                <p>
-                  The Mweka Agri-Project supports the Government of the DRC&apos;s priorities for agriculture: creating sustainable jobs,
-                  replacing costly food imports, reducing poverty in rural areas and revitalising the productive structure of the
-                  Congolese countryside.
                 </p>
               </div>
 
