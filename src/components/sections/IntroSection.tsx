@@ -46,8 +46,8 @@ export default function IntroSection() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/images/office.jpg"
-                alt="Modern office space"
+                src="/images/chadila-mbimbi-falls-2.jpeg"
+                alt="Mbimbi falls on the Kasai river, Kasai province"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"

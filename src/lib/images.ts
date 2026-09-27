@@ -25,7 +25,7 @@ const PROJECT_IMAGES: Record<string, string> = {
 };
 
 const NEWS_IMAGES: Record<string, string> = {
-  "establishment-of-ntz-sprl-and-ksd-sarl": "/images/office.jpg",
+  "establishment-of-ntz-sprl-and-ksd-sarl": "/images/ksd-diamonds-cover.png",
   "ksd-sarl-kasai-sud-diamant-launch": "/images/diamond.jpg",
   "building-business-in-drc": "/images/team-working.jpg",
   "terrakili-agricultural-concession-kasai": "/images/mweka-field.jpg",
@@ -46,7 +46,7 @@ export function projectImage(project?: ProjectLike | null): string {
   if (sector.includes("invest") || sector.includes("develop") || sector.includes("commercial")) {
     return "/images/cranes.jpg";
   }
-  return "/images/office.jpg";
+  return "/images/hero-drc.jpg";
 }
 
 export function newsImage(article?: NewsLike | null): string {
@@ -54,7 +54,7 @@ export function newsImage(article?: NewsLike | null): string {
   if (article?.slug && NEWS_IMAGES[article.slug]) return NEWS_IMAGES[article.slug];
   const category = (article?.category ?? "").toLowerCase();
   if (category.includes("announcement") || category.includes("company")) {
-    return "/images/office.jpg";
+    return "/images/ksd-diamonds-cover.png";
   }
   return "/images/team-working.jpg";
 }
@@ -80,5 +80,5 @@ export function activityImage(activity?: ActivityLike | null): string {
   if (slug.includes("trading") || title.includes("trading") || title.includes("commerce")) {
     return "/images/business-strategy.jpg";
   }
-  return "/images/office.jpg";
+  return "/images/hero-drc.jpg";
 }

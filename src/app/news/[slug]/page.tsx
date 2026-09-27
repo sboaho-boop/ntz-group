@@ -73,7 +73,7 @@ const FALLBACK_ARTICLES: Article[] = [
     slug: "establishment-of-ntz-sprl-and-ksd-sarl",
     category: "Company News",
     date: new Date(),
-    image: "/images/office.jpg",
+    image: "/images/ksd-diamonds-cover.png",
     content:
       "NTZ SPRL and KSD SARL (Kasai Sud Diamant) have been established as Congolese companies operating from Kinshasa, Democratic Republic of Congo.\n\nUnder the leadership of Franck Nyimilongo Pieme, the companies are positioned to pursue strategic business opportunities in the DRC and develop lasting commercial relationships with partners and stakeholders.\n\nBoth companies bring a commitment to professionalism, integrity and long-term value creation to the Congolese business landscape.",
     summary:
