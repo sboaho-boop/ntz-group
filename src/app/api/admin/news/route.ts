@@ -8,7 +8,7 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const article = await db.news.create({ data: { title: body.title, slug: body.slug, category: body.category, author: body.author || "NTZ SPRL & KSD SARL", content: body.content, summary: body.summary, published: body.published || false, companyId: body.companyId || null } });
+  const article = await db.news.create({ data: { title: body.title, slug: body.slug, category: body.category, author: body.author || "NTZ Group", content: body.content, summary: body.summary, published: body.published || false, companyId: body.companyId || null } });
   return NextResponse.json(article, { status: 201 });
 }
 

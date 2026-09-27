@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Terms of Use for the NTZ SPRL and KSD SARL website.",
+  description: "Terms of Use for the NTZ Group website.",
 };
 
 export default function TermsPage() {
@@ -21,9 +21,9 @@ export default function TermsPage() {
             <h2 className="heading-editorial text-2xl text-charcoal">1. Acceptance of Terms</h2>
             <p>By accessing and using this website, you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">2. Use of Website</h2>
-            <p>This website is intended to provide general information about NTZ SPRL and KSD SARL. The content on this website is for informational purposes only and does not constitute an offer or commitment.</p>
+            <p>This website is intended to provide general information about NTZ Group. The content on this website is for informational purposes only and does not constitute an offer or commitment.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">3. Intellectual Property</h2>
-            <p>All content on this website, including text, graphics, logos and design elements, is the property of NTZ SPRL and KSD SARL and is protected by applicable intellectual property laws.</p>
+            <p>All content on this website, including text, graphics, logos and design elements, is the property of NTZ Group and is protected by applicable intellectual property laws.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">4. Limitation of Liability</h2>
             <p>We strive to ensure that the information on this website is accurate and up-to-date. However, we make no warranties or representations about the accuracy or completeness of the content.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">5. Contact</h2>

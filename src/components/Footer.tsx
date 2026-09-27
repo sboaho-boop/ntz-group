@@ -15,12 +15,12 @@ export default function Footer() {
               </span>
               <span className="w-5 h-px bg-gold inline-block mb-1" />
               <span className="font-serif text-lg font-medium text-warm-white/50">
-                KSD
+                GROUP
               </span>
             </div>
             <p className="text-sm leading-relaxed text-warm-white/50 max-w-xs">
-              Building businesses. Creating value in the Democratic Republic of
-              Congo and beyond.
+              Five companies. One commitment to building businesses and creating
+              value in the Democratic Republic of Congo and beyond.
             </p>
           </div>
 
@@ -49,22 +49,22 @@ export default function Footer() {
               Our Companies
             </h4>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/companies/ntz-sprl"
-                  className="text-sm text-warm-white/50 hover:text-warm-white transition-colors duration-300"
-                >
-                  NTZ SPRL
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/companies/ksd-sarl"
-                  className="text-sm text-warm-white/50 hover:text-warm-white transition-colors duration-300"
-                >
-                  KSD SARL — Kasai Sud Diamant
-                </Link>
-              </li>
+              {[
+                { href: "/companies/ksd-sarl", label: "Kasai Sud Diamant" },
+                { href: "/companies/chadila", label: "Chadila" },
+                { href: "/companies/longatshimo", label: "Longatshimo Mining" },
+                { href: "/companies/new-terra-z", label: "New Terra-Z" },
+                { href: "/companies/terrakili-sarl", label: "Terrakili" },
+              ].map((c) => (
+                <li key={c.href}>
+                  <Link
+                    href={c.href}
+                    className="text-sm text-warm-white/50 hover:text-warm-white transition-colors duration-300"
+                  >
+                    {c.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
       <div className="border-t border-warm-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-warm-white/40">
-            &copy; {new Date().getFullYear()} NTZ SPRL &amp; KSD SARL. All Rights
+            &copy; {new Date().getFullYear()} NTZ Group. All Rights
             Reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-warm-white/40">

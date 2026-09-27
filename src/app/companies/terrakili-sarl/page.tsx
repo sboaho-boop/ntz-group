@@ -81,7 +81,7 @@ export default async function TerrakiliPage() {
     <>
       <section className="py-24 lg:py-32 bg-charcoal">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">Company</p>
+          <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">NTZ Group — Company 05</p>
           <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-warm-white mb-2">TERRAKILI SARL</h1>
           <p className="font-serif text-2xl text-warm-white/50 mb-4">Agriculture & Agribusiness</p>
           <div className="line-separator" />

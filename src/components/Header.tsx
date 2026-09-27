@@ -44,7 +44,7 @@ export default function Header() {
               </span>
               <span className="w-5 h-px bg-gold inline-block mb-1" />
               <span className="font-serif text-lg font-medium text-stone">
-                KSD
+                GROUP
               </span>
             </Link>
 

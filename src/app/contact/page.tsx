@@ -52,13 +52,13 @@ export default function ContactPage() {
             <div className="space-y-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">NTZ SPRL</p>
+                  <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">NTZ Group — Head Office</p>
                   <p className="text-stone-dark leading-relaxed">
                     Avenue Katanga N°02<br />Appartement A1<br />Kinshasa-Gombe<br />Democratic Republic of Congo
                   </p>
                 </div>
                 <div>
-                  <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">KSD SARL</p>
+                  <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Kasai Sud Diamant (KSD)</p>
                   <p className="text-stone-dark leading-relaxed">
                     Kinshasa-Gombe<br />Democratic Republic of Congo
                   </p>

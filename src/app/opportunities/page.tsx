@@ -6,7 +6,7 @@ import { OPPORTUNITIES } from "@/lib/opportunities";
 export const metadata: Metadata = {
   title: "Opportunities",
   description:
-    "Business and partnership opportunities across the Kasai province — diamond mining, hydroelectric power, quarry, forestry and agriculture, presented by the NTZ SPRL and KSD SARL group.",
+    "Business and partnership opportunities across the Kasai province — diamond mining, hydroelectric power, quarry, forestry and agriculture, presented by NTZ Group.",
 };
 
 export default function OpportunitiesPage() {

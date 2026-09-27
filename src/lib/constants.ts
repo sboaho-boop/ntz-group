@@ -1,4 +1,4 @@
-export const SITE_NAME = "NTZ SPRL & KSD SARL";
+export const SITE_NAME = "NTZ Group";
 export const SITE_TAGLINE = "Building Businesses. Creating Value.";
 
 export const NAV_ITEMS = [

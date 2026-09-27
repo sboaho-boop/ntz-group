@@ -17,13 +17,14 @@ export default function IntroSection() {
             <div className="line-separator mb-8" />
             <div className="space-y-5 text-stone-dark leading-relaxed">
               <p>
-                NTZ SPRL and KSD SARL are Congolese companies operating from
-                Kinshasa, Democratic Republic of Congo.
+                NTZ Group is a Congolese business group operating from Kinshasa,
+                Democratic Republic of Congo, with five companies across the
+                mining, energy, forestry and agricultural sectors.
               </p>
               <p>
-                The businesses are led by Franck Nyimilongo Pieme and are
-                focused on identifying opportunities, developing commercial
-                relationships and building sustainable business operations.
+                The group is led by Franck Nyimilongo Pieme and is focused on
+                identifying opportunities, developing commercial relationships
+                and building sustainable business operations.
               </p>
               <p>
                 Our approach combines local understanding, strategic thinking

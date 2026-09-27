@@ -3,16 +3,37 @@ import Image from "next/image";
 import { db } from "@/lib/db";
 
 export const metadata: Metadata = {
-  title: "KSD SARL — Kasai Sud Diamant",
-  description: "KSD SARL (Kasai Sud Diamant) — Connecting opportunity, resources and commercial ambition in the Democratic Republic of Congo.",
+  title: "Kasai Sud Diamant (KSD)",
+  description:
+    "Kasai Sud Diamant SARL — diamond exploration and mining in the Kasai province of the DRC, holder of exploitation permits PEPM 9709 and PE 571. An NTZ Group company.",
 };
 
+const identification = [
+  { label: "Legal form", value: "SARL, incorporated April 2006" },
+  { label: "Corporate object", value: "Research, exploitation and commercialisation of mineral substances (diamond)" },
+  { label: "Share capital", value: "USD 2,000 — 100 social shares" },
+  { label: "Shareholders", value: "New Terra-Z SARL and Ets II & M fils" },
+  { label: "Registered office", value: "Avenue Katanga N° 2, App. A1, Kinshasa/Gombe" },
+  { label: "Manager (Gérant)", value: "Franck Nyimilongo Pieme" },
+];
+
+const titles = [
+  { title: "PEPM 9709", holder: "KSD SARL", squares: "34", area: "28.90 km²", granted: "23/12/2019", validity: "10 years", renewal: "22/12/2019" },
+  { title: "PE 571", holder: "KSD SPRL", squares: "26", area: "22.10 km²", granted: "13/09/2006", validity: "15 years", renewal: "12/09/2021" },
+];
+
+const collaboration = [
+  { title: "Equity participation", detail: "Opening of the share capital to a financial partner." },
+  { title: "Joint venture", detail: "A joint venture to develop the exploitation of the permits." },
+  { title: "Acquisition", detail: "Possibility to acquire the mining title or the company outright." },
+  { title: "Exploration spend", detail: "Exploration expenditure estimated at USD 11 million, recoverable before tax and profit sharing." },
+];
+
 export default async function KSDPage() {
-  let company: Awaited<ReturnType<typeof db.company.findUnique>> | null = null;
   let activities: Awaited<ReturnType<typeof db.activity.findMany>> = [];
   let projects: Awaited<ReturnType<typeof db.project.findMany>> = [];
   try {
-    company = await db.company.findUnique({ where: { slug: "ksd-sarl" } });
+    const company = await db.company.findUnique({ where: { slug: "ksd-sarl" } });
     activities = await db.activity.findMany({ where: { companyId: company?.id } });
     projects = await db.project.findMany({ where: { companyId: company?.id } });
   } catch {}
@@ -21,9 +42,9 @@ export default async function KSDPage() {
     <>
       <section className="py-24 lg:py-32 bg-earth-dark">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">Company</p>
-          <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-warm-white mb-2">KSD SARL</h1>
-          <p className="font-serif text-2xl md:text-3xl text-warm-white/60 mb-6">Kasai Sud Diamant</p>
+          <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">NTZ Group — Company 01</p>
+          <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-warm-white mb-2">KASAI SUD DIAMANT</h1>
+          <p className="font-serif text-2xl md:text-3xl text-warm-white/60 mb-6">KSD SARL — Diamond Mining</p>
           <div className="line-separator" />
         </div>
       </section>
@@ -36,26 +57,133 @@ export default async function KSDPage() {
               <h2 className="heading-editorial text-3xl md:text-4xl text-charcoal mb-8">Company Overview</h2>
               <div className="line-separator mb-8" />
               <div className="space-y-5 text-stone-dark leading-relaxed">
-                <p>{company?.description || "KSD SARL operates under the Kasai Sud Diamant identity, connecting opportunity, resources and commercial ambition in the Democratic Republic of Congo."}</p>
-                <p>Led by Directeur Général Franck Nyimilongo Pieme, KSD SARL focuses on the natural resources sector, leveraging the DRC&apos;s significant mineral wealth and the strategic importance of the Kasai region.</p>
-                <p>The company is committed to responsible business practices, sustainable development and creating value for all stakeholders.</p>
+                <p>
+                  Kasai Sud Diamant (KSD) is a Congolese limited liability company incorporated in April 2006, dedicated to the
+                  research, exploitation and commercialisation of diamonds in the Kasai province of the Democratic Republic of Congo.
+                </p>
+                <p>
+                  Led by its Gérant, Franck Nyimilongo Pieme, KSD holds two exploitation permits covering 60 carrés — a combined
+                  area of about 51 km² — and is owned by New Terra-Z SARL and Ets II &amp; M fils. The company leverages the DRC&apos;s
+                  significant mineral wealth and the strategic importance of the Kasai diamond fields.
+                </p>
               </div>
 
               <div className="relative aspect-[16/9] overflow-hidden mt-12 mb-16">
                 <Image
-                  src="/images/diamond.jpg"
-                  alt="KSD SARL — diamond"
+                  src="/images/ksd-diamonds-cover.png"
+                  alt="Kasai Sud Diamant — rough diamonds"
                   fill
                   sizes="(min-width: 1024px) 850px, 100vw"
                   className="object-cover"
                 />
               </div>
 
-              {/* Decorative mineral pattern */}
-              <div className="my-16 flex justify-center gap-3">
-                {[...Array(7)].map((_, i) => (
-                  <div key={i} className="w-2 h-2 border border-gold/30 rotate-45" style={{ opacity: 0.2 + i * 0.1 }} />
-                ))}
+              {/* Identification */}
+              <div className="mt-4 mb-16">
+                <h3 className="heading-editorial text-2xl text-charcoal mb-4">Identification</h3>
+                <div className="line-separator mb-8" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {identification.map((item) => (
+                    <div key={item.label} className="p-6 border border-border">
+                      <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-gold mb-2">{item.label}</p>
+                      <p className="text-stone-dark text-sm leading-relaxed">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mining titles */}
+              <div className="mt-4 mb-16">
+                <h3 className="heading-editorial text-2xl text-charcoal mb-4">Mining Titles</h3>
+                <div className="line-separator mb-8" />
+                <div className="overflow-x-auto border border-border">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-warm-cream text-left">
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Title</th>
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Holder</th>
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Carrés</th>
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Area</th>
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Granted</th>
+                        <th className="p-4 font-medium tracking-wide text-charcoal">Validity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {titles.map((t) => (
+                        <tr key={t.title} className="border-t border-border">
+                          <td className="p-4 text-charcoal font-medium">{t.title}</td>
+                          <td className="p-4 text-stone-dark">{t.holder}</td>
+                          <td className="p-4 text-stone-dark">{t.squares}</td>
+                          <td className="p-4 text-stone-dark">{t.area}</td>
+                          <td className="p-4 text-stone-dark">{t.granted}</td>
+                          <td className="p-4 text-stone-dark">{t.validity}</td>
+                        </tr>
+                      ))}
+                      <tr className="border-t border-border bg-warm-cream/50">
+                        <td className="p-4 text-charcoal font-medium">Total</td>
+                        <td className="p-4" />
+                        <td className="p-4 text-charcoal font-medium">60</td>
+                        <td className="p-4 text-charcoal font-medium">51 km²</td>
+                        <td className="p-4" />
+                        <td className="p-4" />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-sm text-stone mt-4 leading-relaxed">
+                  Legal status of the titles: renewal pending, placed under force majeure, with the possibility of obtaining an
+                  additional three-year period.
+                </p>
+              </div>
+
+              {/* Location & exploitation gallery */}
+              <div className="mt-4 mb-16">
+                <h3 className="heading-editorial text-2xl text-charcoal mb-4">Location & Exploitation</h3>
+                <div className="line-separator mb-8" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image src="/images/ksd-location-map.jpeg" alt="KSD permit location map" fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover" />
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image src="/images/ksd-concession-map.jpg" alt="KSD concession map" fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover" />
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image src="/images/ksd-pe571-artisanal-1.jpeg" alt="Artisanal exploitation on PE 571" fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover" />
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image src="/images/ksd-pe571-artisanal-2.jpeg" alt="Artisanal exploitation on PE 571" fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Production & certification */}
+              <div className="mt-4 mb-16">
+                <h3 className="heading-editorial text-2xl text-charcoal mb-4">Production & Certification</h3>
+                <div className="line-separator mb-8" />
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                  {["ksd-diamond-parcel", "ksd-diamond-parcels", "ksd-diamonds-tray", "ksd-production-stats", "ksd-resource-statement", "ksd-kimberley-certificate"].map((img) => (
+                    <div key={img} className="relative aspect-[4/3] overflow-hidden">
+                      <Image src={`/images/${img}.jpg`} alt="Kasai Sud Diamant production and certification" fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
+                    </div>
+                  ))}
+                </div>
+                <p className="text-sm text-stone mt-4 leading-relaxed">
+                  Parcels are exported in line with the Kimberley Process certification scheme, with production assessed by the
+                  CEEC (Centre d&apos;Expertise, d&apos;Évaluation et de Certification des substances minérales précieuses et semi-précieuses).
+                </p>
+              </div>
+
+              {/* Collaboration */}
+              <div className="mt-4 mb-16 p-10 bg-earth-dark text-warm-white">
+                <h3 className="heading-editorial text-2xl mb-8">Collaboration Sought</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {collaboration.map((c) => (
+                    <div key={c.title}>
+                      <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-gold mb-2">{c.title}</p>
+                      <p className="text-warm-white/70 text-sm leading-relaxed">{c.detail}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {activities.length > 0 && (
@@ -102,12 +230,33 @@ export default async function KSDPage() {
               <div className="p-8 border border-border">
                 <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Leadership</p>
                 <p className="text-charcoal font-medium">Franck Nyimilongo Pieme</p>
-                <p className="text-sm text-stone mt-1">Directeur Général</p>
+                <p className="text-sm text-stone mt-1">Gérant</p>
+              </div>
+              <div className="p-8 border border-border">
+                <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Key Facts</p>
+                <dl className="space-y-3 text-sm">
+                  <div>
+                    <dt className="text-stone">Incorporated</dt>
+                    <dd className="text-charcoal">April 2006</dd>
+                  </div>
+                  <div>
+                    <dt className="text-stone">Permits</dt>
+                    <dd className="text-charcoal">PEPM 9709 &amp; PE 571</dd>
+                  </div>
+                  <div>
+                    <dt className="text-stone">Combined area</dt>
+                    <dd className="text-charcoal">~51 km² (60 carrés)</dd>
+                  </div>
+                  <div>
+                    <dt className="text-stone">Sector</dt>
+                    <dd className="text-charcoal">Diamond mining</dd>
+                  </div>
+                </dl>
               </div>
               <div className="p-8 border border-border">
                 <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Location</p>
                 <p className="text-sm text-stone-dark leading-relaxed">
-                  Kinshasa-Gombe<br />Democratic Republic of Congo
+                  Avenue Katanga N° 2, App. A1<br />Kinshasa-Gombe<br />Democratic Republic of Congo
                 </p>
               </div>
               <div className="p-8 border border-border">

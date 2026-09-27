@@ -4,7 +4,7 @@ import { db } from "@/lib/db";
 
 export const metadata: Metadata = {
   title: "Leadership",
-  description: "Meet the leadership of NTZ SPRL, KSD SARL and Terrakili SARL.",
+  description: "Meet the leadership of NTZ Group and its five companies.",
 };
 
 function initials(name: string) {
@@ -27,8 +27,8 @@ export default async function LeadershipPage() {
         id: "1",
         name: "Franck Nyimilongo Pieme",
         slug: "frank-nyimilongo-pieme",
-        position: "Associé Gérant — NTZ SPRL\nDirecteur Général — KSD SARL\nCo-Founder — Terrakili SARL",
-        biography: "Franck Nyimilongo Pieme is a business executive based in the Democratic Republic of Congo, providing leadership across NTZ SPRL and KSD SARL.\n\nHe is also a founder of Terrakili SARL, the company behind the Mweka Agri-Project, a commercial crop farming initiative in the Kasai province. Together with his co-founders, he brings over 50 years of combined experience in agriculture, agri-business and business management across Southern Africa, and is committed to strengthening food security in the DRC.\n\nHis approach combines a deep understanding of the Congolese business environment with strategic thinking and a commitment to creating lasting value.",
+        position: "Founder — NTZ Group\nGérant — Kasai Sud Diamant (KSD)\nGérant — Chadila, Longatshimo & New Terra-Z\nCo-Founder — Terrakili",
+        biography: "Franck Nyimilongo Pieme is a business executive based in the Democratic Republic of Congo and the founder of NTZ Group, providing leadership across its five companies — Kasai Sud Diamant, Chadila, Longatshimo Mining Company, New Terra-Z and Terrakili.\n\nHe is also a founder of Terrakili SARL, the company behind the Mweka Agri-Project, a commercial crop farming initiative in the Kasai province. Together with his co-founders, he brings over 50 years of combined experience in agriculture, agri-business and business management across Southern Africa, and is committed to strengthening food security in the DRC.\n\nHis approach combines a deep understanding of the Congolese business environment with strategic thinking and a commitment to creating lasting value.",
         photo: "/images/leadership-franck.jpg",
       },
       {

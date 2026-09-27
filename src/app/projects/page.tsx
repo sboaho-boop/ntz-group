@@ -6,7 +6,7 @@ import { projectImage } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Explore selected projects and business activities by NTZ SPRL, KSD SARL and Terrakili SARL.",
+  description: "Explore selected projects and business activities by the NTZ Group companies.",
 };
 
 export default async function ProjectsPage() {

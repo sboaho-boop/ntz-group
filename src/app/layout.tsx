@@ -19,16 +19,16 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "NTZ SPRL & KSD SARL | Business & Strategic Opportunities in DRC",
-    template: "%s | NTZ SPRL & KSD SARL",
+    default: "NTZ Group | Business & Strategic Opportunities in DRC",
+    template: "%s | NTZ Group",
   },
   description:
-    "A Congolese business group pursuing strategic opportunities and building lasting commercial relationships in the Democratic Republic of Congo.",
-  keywords: ["NTZ SPRL", "KSD SARL", "Kasai Sud Diamant", "DRC", "Kinshasa", "business", "natural resources", "trading"],
+    "NTZ Group is a Congolese business group with five companies spanning diamond mining, hydroelectricity, quarrying, forestry and agriculture in the Democratic Republic of Congo.",
+  keywords: ["NTZ Group", "Kasai Sud Diamant", "KSD", "Chadila", "Longatshimo Mining Company", "New Terra-Z", "Terrakili", "DRC", "Kinshasa", "Kasai", "diamonds", "agriculture", "forestry"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "NTZ SPRL & KSD SARL",
+    siteName: "NTZ Group",
   },
 };
 

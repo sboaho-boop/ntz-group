@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about NTZ SPRL, KSD SARL and Terrakili SARL — Congolese companies building sustainable businesses and modern agriculture in the Democratic Republic of Congo.",
+  description: "Learn about NTZ Group — five Congolese companies spanning diamond mining, hydroelectricity, quarrying, forestry and modern agriculture in the Democratic Republic of Congo.",
 };
 
 const values = [
@@ -53,19 +53,26 @@ export default async function AboutPage() {
               <div className="line-separator mb-8" />
               <div className="space-y-5 text-stone-dark leading-relaxed">
                 <p>
-                  NTZ SPRL and KSD SARL (Kasai Sud Diamant) are Congolese companies operating from Kinshasa, Democratic Republic of Congo.
+                  NTZ Group is a Congolese business group operating from Kinshasa, Democratic Republic of Congo. Under the
+                  leadership of Franck Nyimilongo Pieme, it brings together five companies working across the mining, energy,
+                  forestry and agricultural sectors.
                 </p>
                 <p>
-                  Founded under the leadership of Franck Nyimilongo Pieme, the companies were established with a clear vision: to identify opportunities in one of Africa&apos;s most resource-rich nations and build sustainable business operations that create lasting value.
+                  The group was established with a clear vision: to identify opportunities in one of Africa&apos;s most resource-rich
+                  nations and build sustainable business operations that create lasting value.
                 </p>
                 <p>
-                  The group&apos;s third company, Terrakili SARL, is dedicated to agriculture and agribusiness. Through the Mweka Agri-Project, it is developing a commercial crop farming operation on a 48,000-hectare concession in the Kasai province — building modern farming capacity, creating jobs and strengthening food security in the DRC.
+                  Its five companies are Kasai Sud Diamant (KSD) and Longatshimo Mining Company in diamond mining; Chadila, spanning
+                  diamonds, hydroelectricity and quarrying; New Terra-Z in forestry and agriculture; and Terrakili, the project owner
+                  of the Mweka Agri-Project — a commercial crop farming operation on a 48,000-hectare concession in the Kasai province.
                 </p>
                 <p>
-                  From our base in Kinshasa-Gombe, we combine deep local knowledge with an international approach to business, working with partners and stakeholders across the Democratic Republic of Congo and beyond.
+                  From our base in Kinshasa-Gombe, we combine deep local knowledge with an international approach to business, working
+                  with partners and stakeholders across the Democratic Republic of Congo and beyond.
                 </p>
                 <p>
-                  Our approach is grounded in professionalism, integrity and a commitment to developing businesses that contribute to economic growth while serving the interests of all stakeholders.
+                  Our approach is grounded in professionalism, integrity and a commitment to developing businesses that contribute to
+                  economic growth while serving the interests of all stakeholders.
                 </p>
               </div>
             </div>

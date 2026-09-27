@@ -7,7 +7,7 @@ import { newsImage } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "News",
-  description: "Latest news and updates from NTZ SPRL, KSD SARL and Terrakili SARL.",
+  description: "Latest news and updates from NTZ Group and its companies.",
 };
 
 export default async function NewsPage() {

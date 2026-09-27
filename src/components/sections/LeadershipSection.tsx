@@ -22,8 +22,8 @@ export default async function LeadershipSection() {
         id: "1",
         name: "Franck Nyimilongo Pieme",
         slug: "frank-nyimilongo-pieme",
-        position: "Associé Gérant — NTZ SPRL\nDirecteur Général — KSD SARL\nCo-Founder — Terrakili SARL",
-        biography: "Franck Nyimilongo Pieme is a business executive based in the Democratic Republic of Congo, providing leadership across NTZ SPRL, KSD SARL and Terrakili SARL. He is co-founder of the Mweka Agri-Project.",
+        position: "Founder — NTZ Group\nGérant — KSD, Chadila, Longatshimo & New Terra-Z\nCo-Founder — Terrakili",
+        biography: "Franck Nyimilongo Pieme is a business executive based in the Democratic Republic of Congo and the founder of NTZ Group, providing leadership across its five companies — Kasai Sud Diamant, Chadila, Longatshimo Mining Company, New Terra-Z and Terrakili. He is co-founder of the Mweka Agri-Project.",
         photo: "/images/leadership-franck.jpg",
       },
     ];

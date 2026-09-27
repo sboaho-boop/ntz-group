@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for NTZ SPRL and KSD SARL.",
+  description: "Privacy Policy for NTZ Group.",
 };
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
           <div className="space-y-6 text-stone-dark leading-relaxed">
             <p className="text-sm text-stone">Last updated: January 2026</p>
             <h2 className="heading-editorial text-2xl text-charcoal">1. Introduction</h2>
-            <p>NTZ SPRL and KSD SARL (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use and protect information when you visit our website.</p>
+            <p>NTZ Group (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use and protect information when you visit our website.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">2. Information We Collect</h2>
             <p>We may collect personal information that you voluntarily provide when contacting us, including your name, email address, phone number, company name and any information contained in your message.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">3. How We Use Your Information</h2>
