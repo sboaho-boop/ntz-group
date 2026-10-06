@@ -444,7 +444,7 @@ export default async function TerrakiliPage() {
               <div className="p-8 border border-border">
                 <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Contact</p>
                 <p className="text-sm text-stone-dark">
-                  <a href="mailto:fnyimilongo@yahoo.fr" className="hover:text-gold transition-colors">fnyimilongo@yahoo.fr</a>
+                  <a href="mailto:trk@ntz-group.com" className="hover:text-gold transition-colors">trk@ntz-group.com</a>
                 </p>
               </div>
             </div>

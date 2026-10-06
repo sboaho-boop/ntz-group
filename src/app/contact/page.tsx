@@ -69,8 +69,12 @@ export default function ContactPage() {
                 <div>
                   <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Email</p>
                   <div className="space-y-1 text-stone-dark">
-                    <p><a href="mailto:fnyimilongo@yahoo.fr" className="hover:text-gold transition-colors">fnyimilongo@yahoo.fr</a></p>
-                    <p><a href="mailto:fpnyimilongo@gmail.com" className="hover:text-gold transition-colors">fpnyimilongo@gmail.com</a></p>
+                    <p><a href="mailto:contact@ntz-group.com" className="hover:text-gold transition-colors">contact@ntz-group.com</a></p>
+                    <p><a href="mailto:ksd@ntz-group.com" className="hover:text-gold transition-colors">ksd@ntz-group.com</a></p>
+                    <p><a href="mailto:cdl@ntz-group.com" className="hover:text-gold transition-colors">cdl@ntz-group.com</a></p>
+                    <p><a href="mailto:lmc@ntz-group.com" className="hover:text-gold transition-colors">lmc@ntz-group.com</a></p>
+                    <p><a href="mailto:ntz@ntz-group.com" className="hover:text-gold transition-colors">ntz@ntz-group.com</a></p>
+                    <p><a href="mailto:trk@ntz-group.com" className="hover:text-gold transition-colors">trk@ntz-group.com</a></p>
                   </div>
                 </div>
                 <div>

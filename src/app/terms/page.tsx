@@ -27,7 +27,7 @@ export default function TermsPage() {
             <h2 className="heading-editorial text-2xl text-charcoal">4. Limitation of Liability</h2>
             <p>We strive to ensure that the information on this website is accurate and up-to-date. However, we make no warranties or representations about the accuracy or completeness of the content.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">5. Contact</h2>
-            <p>For any questions regarding these terms, please contact us at <a href="mailto:fnyimilongo@yahoo.fr" className="text-gold hover:text-gold-dark transition-colors">fnyimilongo@yahoo.fr</a>.</p>
+            <p>For any questions regarding these terms, please contact us at <a href="mailto:contact@ntz-group.com" className="text-gold hover:text-gold-dark transition-colors">contact@ntz-group.com</a>.</p>
           </div>
         </div>
       </section>

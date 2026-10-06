@@ -262,7 +262,7 @@ export default async function KSDPage() {
               <div className="p-8 border border-border">
                 <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-4">Contact</p>
                 <p className="text-sm text-stone-dark">
-                  <a href="mailto:fpnyimilongo@gmail.com" className="hover:text-gold transition-colors">fpnyimilongo@gmail.com</a>
+                  <a href="mailto:ksd@ntz-group.com" className="hover:text-gold transition-colors">ksd@ntz-group.com</a>
                 </p>
               </div>
             </div>

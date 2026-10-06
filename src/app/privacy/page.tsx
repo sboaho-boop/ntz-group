@@ -27,7 +27,7 @@ export default function PrivacyPage() {
             <h2 className="heading-editorial text-2xl text-charcoal">4. Data Protection</h2>
             <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet is completely secure.</p>
             <h2 className="heading-editorial text-2xl text-charcoal">5. Contact Us</h2>
-            <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:fnyimilongo@yahoo.fr" className="text-gold hover:text-gold-dark transition-colors">fnyimilongo@yahoo.fr</a>.</p>
+            <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:contact@ntz-group.com" className="text-gold hover:text-gold-dark transition-colors">contact@ntz-group.com</a>.</p>
           </div>
         </div>
       </section>
