@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_ITEMS } from "@/lib/constants";
 
 export default function Footer() {
@@ -9,6 +10,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
+            <div className="relative w-16 h-16 bg-warm-white shadow-md mb-6">
+              <Image
+                src="/logos/ntz-group.png"
+                alt="NTZ Group logo"
+                fill
+                sizes="64px"
+                className="object-contain"
+              />
+            </div>
             <div className="flex items-baseline gap-1.5 mb-6">
               <span className="font-serif text-2xl font-semibold text-warm-white">
                 NTZ

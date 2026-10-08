@@ -43,6 +43,9 @@ export default async function ChadilaPage() {
     <>
       <section className="py-24 lg:py-32 bg-charcoal-dark">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="relative w-24 h-24 md:w-28 md:h-28 bg-warm-white shadow-xl mb-8">
+            <Image src="/logos/chadila.png" alt="Chadila logo" fill sizes="112px" className="object-contain" />
+          </div>
           <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">NTZ Group — Company 02</p>
           <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-warm-white mb-2">CHADILA</h1>
           <p className="font-serif text-2xl md:text-3xl text-warm-white/60 mb-6">Diamonds, Hydroelectricity &amp; Quarrying</p>

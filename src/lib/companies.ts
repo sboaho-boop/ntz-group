@@ -5,6 +5,7 @@ export type Company = {
   sector: string;
   blurb: string;
   image: string;
+  logo: string;
   /** literal Tailwind classes so the v4 scanner can see them */
   gradient: string;
   button: string;
@@ -20,6 +21,7 @@ export const COMPANIES: Company[] = [
     blurb:
       "Diamond exploration and mining in the Kasai province — holder of exploitation permits PEPM 9709 and PE 571.",
     image: "/images/ksd-diamonds-cover.png",
+    logo: "/logos/ksd.png",
     gradient: "from-earth-dark/90 via-earth-dark/30 to-transparent",
     button: "bg-earth-dark hover:bg-earth",
     order: "Company 01",
@@ -32,6 +34,7 @@ export const COMPANIES: Company[] = [
     blurb:
       "Diamond mining on permit PE 569, the Mbimbi falls hydroelectric potential of around 100 MW, and granite quarrying near Tshikapa.",
     image: "/images/chadila-mbimbi-falls-1.jpeg",
+    logo: "/logos/chadila.png",
     gradient: "from-charcoal-dark/90 via-charcoal-dark/30 to-transparent",
     button: "bg-charcoal hover:bg-charcoal-light",
     order: "Company 02",
@@ -44,6 +47,7 @@ export const COMPANIES: Company[] = [
     blurb:
       "Diamond exploration across permits PEPM 484 to 491 on the Longatshimo river, four kilometres from the Angolan border.",
     image: "/images/longatshimo-drilling-1.jpg",
+    logo: "/logos/longatshimo.png",
     gradient: "from-earth/90 via-earth/30 to-transparent",
     button: "bg-earth hover:bg-earth-light",
     order: "Company 03",
@@ -56,6 +60,7 @@ export const COMPANIES: Company[] = [
     blurb:
       "Forestry and agricultural concessions in Mweka, Kasai — 13,000 hectares secured and a further 30,000 hectares being acquired.",
     image: "/images/newterra-forest-1.jpeg",
+    logo: "/logos/new-terra-z.png",
     gradient: "from-forest/90 via-forest-light/30 to-transparent",
     button: "bg-forest hover:bg-forest-light",
     order: "Company 04",
@@ -68,6 +73,7 @@ export const COMPANIES: Company[] = [
     blurb:
       "Project owner of the Mweka Agri-Project — commercial crop farming on a 48,000-hectare concession in the Kasai province.",
     image: "/images/mweka-site-1.jpg",
+    logo: "/logos/terrakili.png",
     gradient: "from-forest-light/90 via-forest/30 to-transparent",
     button: "bg-forest-light hover:bg-forest",
     order: "Company 05",

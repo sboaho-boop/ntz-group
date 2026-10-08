@@ -35,6 +35,9 @@ export default async function LongatshimoPage() {
     <>
       <section className="py-24 lg:py-32 bg-charcoal">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="relative w-24 h-24 md:w-28 md:h-28 bg-warm-white shadow-xl mb-8">
+            <Image src="/logos/longatshimo.png" alt="Longatshimo Mining Company logo" fill sizes="112px" className="object-contain" />
+          </div>
           <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-gold mb-6">NTZ Group — Company 03</p>
           <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-warm-white mb-2">LONGATSHIMO</h1>
           <p className="font-serif text-2xl md:text-3xl text-warm-white/60 mb-6">Longatshimo Mining Company — Diamond Mining</p>

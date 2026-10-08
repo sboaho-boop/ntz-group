@@ -37,6 +37,15 @@ export default function CompaniesPage() {
                     className="object-cover"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${company.gradient}`} />
+                  <div className="absolute top-6 right-6 z-10 w-20 h-20 md:w-24 md:h-24 bg-warm-white shadow-lg">
+                    <Image
+                      src={company.logo}
+                      alt={`${company.name} logo`}
+                      fill
+                      sizes="96px"
+                      className="object-contain"
+                    />
+                  </div>
                   <div className="relative z-10">
                     <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-3">{company.order}</p>
                     <h2 className="heading-display text-3xl lg:text-4xl text-warm-white mb-1">{company.name}</h2>

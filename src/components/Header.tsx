@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { NAV_ITEMS } from "@/lib/constants";
@@ -38,13 +39,24 @@ export default function Header() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-baseline gap-1.5 group">
-              <span className="font-serif text-2xl font-semibold tracking-tight text-charcoal">
-                NTZ
+            <Link href="/" className="flex items-center gap-3 group">
+              <span className="relative w-9 h-9 bg-warm-white shadow-sm shrink-0">
+                <Image
+                  src="/logos/ntz-group.png"
+                  alt="NTZ Group logo"
+                  fill
+                  sizes="36px"
+                  className="object-contain"
+                />
               </span>
-              <span className="w-5 h-px bg-gold inline-block mb-1" />
-              <span className="font-serif text-lg font-medium text-stone">
-                GROUP
+              <span className="flex items-baseline gap-1.5">
+                <span className="font-serif text-2xl font-semibold tracking-tight text-charcoal">
+                  NTZ
+                </span>
+                <span className="w-5 h-px bg-gold inline-block mb-1" />
+                <span className="font-serif text-lg font-medium text-stone">
+                  GROUP
+                </span>
               </span>
             </Link>
 

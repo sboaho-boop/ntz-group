@@ -36,6 +36,15 @@ export default function CompaniesSection() {
                   className="object-cover"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${company.gradient}`} />
+                <div className="absolute top-5 right-5 z-10 w-16 h-16 md:w-20 md:h-20 bg-warm-white shadow-lg">
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    fill
+                    sizes="80px"
+                    className="object-contain"
+                  />
+                </div>
                 <div className="relative z-10">
                   <p className="text-[11px] font-medium tracking-[0.25em] uppercase text-gold mb-3">
                     {company.acronym}
